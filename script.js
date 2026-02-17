@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Анимация появления при скролле
     const reveals = document.querySelectorAll('.reveal');
 
     const revealOnScroll = new IntersectionObserver((entries) => {
