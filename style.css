@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 { font-family: var(--font-heading); font-weight: 400; }
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; }
 h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; }
 h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; }
 a { text-decoration: none; color: inherit; }
@@ -73,21 +73,56 @@ a { text-decoration: none; color: inherit; }
 .practice-card:hover { transform: translateY(-10px); border-color: var(--accent-color); }
 .card-icon { font-size: 2rem; color: var(--accent-color); margin-bottom: 20px; }
 
+/* Philosophy */
+.philosophy { background: var(--bg-color); }
+.philosophy-block {
+    max-width: 800px; margin: 0 auto 60px; padding: 40px;
+    background: white; border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.philosophy-block h3 {
+    font-size: 1.8rem; color: var(--accent-color);
+    margin-bottom: 20px; text-align: center;
+}
+.philosophy-block p { font-size: 1.05rem; line-height: 1.8; text-align: justify; }
+.philosophy-quote { max-width: 800px; margin: 60px auto 0; }
+.philosophy blockquote {
+    font-family: var(--font-heading); font-size: 1.8rem; font-style: italic;
+    margin: 40px 0; padding: 40px;
+    border-left: 3px solid var(--accent-color);
+    background: #EFEAE0; text-align: center;
+}
+.philosophy blockquote cite {
+    display: block; margin-top: 20px;
+    font-size: 1rem; font-style: normal; color: var(--accent-color);
+}
+
+/* Values */
+.values { background: white; }
+.values-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;
+}
+.value-item {
+    text-align: center; padding: 30px 20px;
+    border: 1px solid #E8E0D5; border-radius: 4px; transition: 0.3s;
+}
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+.value-item h4 { font-size: 1.4rem; color: var(--accent-color); margin-bottom: 15px; }
+.value-item p { font-size: 0.95rem; line-height: 1.6; }
+
 /* Contact */
 .contact { background: var(--dark-bg); color: var(--light-text); }
 .contact-content { text-align: center; }
 .contact-item { margin: 10px 0; }
 .contact .cta-button { border-color: var(--accent-color); color: var(--accent-color); }
 .contact .cta-button:hover { background: var(--accent-color); color: var(--dark-bg); }
-
-/* Logo in Contact */
 .contact-logo {
-    max-width: 250px;
-    display: block;
-    margin: 0 auto 40px;
-    background: var(--bg-color);
-    padding: 10px;
-    border-radius: 4px;
+    max-width: 250px; display: block;
+    margin: 0 auto 40px; background: var(--bg-color);
+    padding: 10px; border-radius: 4px;
 }
 
 /* Footer */
@@ -118,4 +153,8 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
     .about-content { grid-template-columns: 1fr; }
+    .philosophy-block { padding: 25px; margin-bottom: 30px; }
+    .philosophy-block h3 { font-size: 1.4rem; }
+    .philosophy-block p { font-size: 0.95rem; text-align: left; }
+    .philosophy blockquote { font-size: 1.2rem; padding: 20px; }
 }
