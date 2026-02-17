@@ -73,42 +73,22 @@ a { text-decoration: none; color: inherit; }
 .practice-card:hover { transform: translateY(-10px); border-color: var(--accent-color); }
 .card-icon { font-size: 2rem; color: var(--accent-color); margin-bottom: 20px; }
 
-/* Philosophy */
-.philosophy { text-align: center; }
-.philosophy-content { max-width: 800px; margin: 0 auto; }
-blockquote {
-    font-family: var(--font-heading);
-    font-size: 1.8rem;
-    font-style: italic;
-    margin: 40px 0;
-    padding: 40px;
-    border-left: 3px solid var(--accent-color);
-    background: #EFEAE0;
-}
-blockquote cite {
-    display: block; margin-top: 20px;
-    font-size: 1rem; font-style: normal;
-    color: var(--accent-color);
-}
-
-/* Schedule */
-.schedule-item {
-    display: flex; justify-content: space-between; padding: 20px 0;
-    border-bottom: 1px solid #D4C5B0;
-}
-.schedule-day { font-weight: 600; }
-.schedule-practice { color: var(--accent-color); }
-.schedule-note {
-    text-align: center; margin-top: 40px;
-    font-style: italic; color: var(--accent-color);
-}
-
 /* Contact */
 .contact { background: var(--dark-bg); color: var(--light-text); }
 .contact-content { text-align: center; }
 .contact-item { margin: 10px 0; }
 .contact .cta-button { border-color: var(--accent-color); color: var(--accent-color); }
 .contact .cta-button:hover { background: var(--accent-color); color: var(--dark-bg); }
+
+/* Logo in Contact */
+.contact-logo {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 40px;
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 4px;
+}
 
 /* Footer */
 .footer { text-align: center; padding: 40px; font-size: 0.8rem; opacity: 0.6; }
@@ -138,6 +118,4 @@ blockquote cite {
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
     .about-content { grid-template-columns: 1fr; }
-    .schedule-item { flex-direction: column; gap: 5px; }
-    blockquote { font-size: 1.3rem; padding: 20px; }
 }
