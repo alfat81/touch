@@ -6,9 +6,9 @@
     <title>Театр прикосновений — Школа телесных практик</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
     <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Hero Section -->
@@ -77,6 +77,82 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <h2 class="section-title">Пространство практик</h2>
+            <p class="gallery-subtitle reveal">Моменты присутствия и контакта</p>
+            
+            <!-- Main Carousel -->
+            <div class="carousel-container reveal">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="img/gallery/hands.jpg" alt="Прикосновение">
+                            <div class="slide-caption">Контакт и доверие</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/hero-bg.jpg" alt="Практика">
+                            <div class="slide-caption">Присутствие в моменте</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/hands.jpg" alt="Осознанность">
+                            <div class="slide-caption">Осознанное движение</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/hero-bg.jpg" alt="Группа">
+                            <div class="slide-caption">Групповая практика</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/hands.jpg" alt="Терапия">
+                            <div class="slide-caption">Телесная терапия</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="carousel-nav prev" aria-label="Предыдущее фото">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-nav next" aria-label="Следующее фото">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+                
+                <!-- Dots -->
+                <div class="carousel-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                </div>
+            </div>
+
+            <!-- Thumbnail Gallery -->
+            <div class="gallery-thumbnails reveal">
+                <div class="thumbnail active" data-index="0">
+                    <img src="img/gallery/hands.jpg" alt="Фото 1">
+                </div>
+                <div class="thumbnail" data-index="1">
+                    <img src="img/gallery/hero-bg.jpg" alt="Фото 2">
+                </div>
+                <div class="thumbnail" data-index="2">
+                    <img src="img/gallery/hands.jpg" alt="Фото 3">
+                </div>
+                <div class="thumbnail" data-index="3">
+                    <img src="img/gallery/hero-bg.jpg" alt="Фото 4">
+                </div>
+                <div class="thumbnail" data-index="4">
+                    <img src="img/gallery/hands.jpg" alt="Фото 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Practices -->
     <section id="practices" class="section practices">
         <div class="container">
@@ -127,6 +203,33 @@
                     <h4>Добровольность</h4>
                     <p>Вы выбираете уровень своего участия. Никакого давления.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <h2 class="section-title">Расписание</h2>
+            <div class="schedule-list reveal">
+                <div class="schedule-item">
+                    <div class="schedule-day">Понедельник</div>
+                    <div class="schedule-time">19:00 - 21:00</div>
+                    <div class="schedule-practice">Контактная импровизация</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-day">Среда</div>
+                    <div class="schedule-time">19:00 - 21:00</div>
+                    <div class="schedule-practice">Телесная терапия</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-day">Суббота</div>
+                    <div class="schedule-time">11:00 - 14:00</div>
+                    <div class="schedule-practice">Интенсив выходного дня</div>
+                </div>
+            </div>
+            <div class="schedule-note reveal">
+                <p>Первое занятие — бесплатно. Предварительная запись обязательна.</p>
             </div>
         </div>
     </section>
